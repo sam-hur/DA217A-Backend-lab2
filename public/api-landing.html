@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API home menu</title>
+    <style>
+        p {
+            font: 24px Kristen ITC;
+            text-align: center;
+            margin-top: 24vh;
+        }
+
+        button {
+            transform: scale(2, 2);
+            height: 56px;
+            width: 31vw;
+            /* (100 - 38)/2 = 31 */
+        }
+
+        #countries {
+            transform: scale(2, 2);
+            height: 56px;
+            margin: 2vh 34.5vw;
+            margin-bottom: 0;
+        }
+
+        #random-country {
+            transform: scale(1.4, 1.4);
+            height: 36px;
+            margin: 5vh 34.5vw;
+        }
+    </style>
+</head>
+
+<script type="text/javascript">
+    function viewCountries() {
+        alert("Backend will now retrieve new data using the API GET verb. Press OK to continue.");
+        return window.location.href = "http://localhost:13455/api/countries";
+    }
+</script>
+
+<body>
+    <section class="options">
+        <p>Click to view...</p>
+        <button id="countries" type="button" onclick=viewCountries()>all countries</button>
+    </section>
+
+</body>
+
+</html>

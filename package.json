@@ -1,0 +1,29 @@
+{
+  "name": "lab2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "HKR",
+    "Backend",
+    "Lab2"
+  ],
+  "author": "Sam Hurenkamp",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "axios": "^0.26.0",
+    "countries-list": "^2.6.1",
+    "express": "^4.17.3",
+    "morgan": "^1.10.0",
+    "npm": "^8.5.3",
+    "open": "^8.4.0"
+  }
+}
